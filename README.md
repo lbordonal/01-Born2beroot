@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-This repository contains coding developed at 42 Porto for Born2beroot Project, from ...
+This repository contains code developed at 42 Porto for Born2beroot Project, from ...
 </p>
 
 
