@@ -14,5 +14,8 @@
 This repository contains code developed at 42 Porto for Born2beroot Project, from ...
 </p>
 
-
-## :notebook: [Subject](https://github.com/lbordonal/03-Born2beroot/blob/main/Subject/en.subject.pdf) <br />
+<h2 align="left">
+	 :notebook: Subject
+</h2>
+<a href="https://github.com/lbordonal/03-Born2beroot/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
+<br /><br />
