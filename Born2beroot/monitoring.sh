@@ -6,7 +6,13 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:09:08 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/23 13:09:46 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/24 12:33:03 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+#!/bin/bash
+
+ip=$(hostname -I)
+mac=$(ip a | grep ether | awk '{print $2}')
+
+wall "#Network: IP $ip ($mac)"
