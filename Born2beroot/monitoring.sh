@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:09:08 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/25 16:49:55 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/25 17:26:36 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,14 +35,13 @@ last_boot=$(who -b | awk '{print $3 " " $4}')
 
 #LVM:
 lvm=$(lsblk | grep "lvm" | wc -l)
-
-lvmt=$()
-lvmu=$(if [ $lvmt -eq 0 ]; then echo no; else echo yes; fi)
+lvmu=$(if [ $lvm -eq 0 ]; then echo no; else echo yes; fi)
 
 #NETWORK:
 ip=$(hostname -I)
 mac=$(ip a | grep ether | awk '{print $2}')
 
+#Display output:
 wall "
 #Architecture: $arch
 #CPU Physical: $cpu
@@ -51,7 +50,7 @@ wall "
 #Disk Usage: $used_disk/$total_disk GB ($percent_disk%)
 #CPU load: $cpu_usage
 #Last boot: $last_boot
-#LVM use:
+#LVM use: $lvmu
 #Connections TCP:
 #User log:
 #Network: IP $ip ($mac)
