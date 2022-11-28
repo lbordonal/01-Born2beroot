@@ -37,9 +37,19 @@ last_boot=$(who -b | awk '{print $3 " " $4}')
 lvm=$(lsblk | grep "lvm" | wc -l)
 lvmu=$(if [ $lvm -eq 0 ]; then echo no; else echo yes; fi)
 
+#ACTIVE CONNECTIONS:
+tcp=$(ss -ta | grep ESTABLISHED | wc -1)
+
+#USERS:
+usrs=$(users | wc -w)
+
 #NETWORK:
 ip=$(hostname -I)
 mac=$(ip a | grep ether | awk '{print $2}')
+
+#CMDS:
+cmds=$(journalctl_COMM=sudo | grep COMMAND | wc -l)
+https
 
 #Display output:
 wall "
@@ -51,8 +61,8 @@ wall "
 #CPU load: $cpu_usage
 #Last boot: $last_boot
 #LVM use: $lvmu
-#Connections TCP:
-#User log:
+#Connections TCP: $tcp
+#User log: $usrs
 #Network: IP $ip ($mac)
-#Sudo:
+#Sudo: $cmds
 "
