@@ -25,29 +25,29 @@ total_ram=$(free -m | awk '$1 == "Mem:" {print $2}')
 used_ram=$(free -m | awk '$1 == "Mem:" {print $3}')
 percent_ram=$(free | awk '$1 == "Mem:" {printf("%.2f"), $3/$2*100}')
 
-#DISK:
+#Disk:
 total_disk=$(df -Bg | grep '^/dev/' | grep -v '/boot$' | awk '{td += $2} END {print td}')
 used_disk=$(df -Bg | grep '^/dev/' | grep -v '/boot$' | awk '{ud += $3} END {print ud}')
 percent_disk=$(df -Bg | grep '^/dev/' | grep -v '/boot$' | awk '{ud += $3} {td+= $2} END {printf("%d"), (ud/td)*100}')
 
-#LAST BOOT:
+#Last boot:
 last_boot=$(who -b | awk '{print $3 " " $4}')
 
 #LVM:
 lvm=$(lsblk | grep "lvm" | wc -l)
 lvmu=$(if [ $lvm -eq 0 ]; then echo no; else echo yes; fi)
 
-#ACTIVE CONNECTIONS:
+#Active Connections:
 tcp=$(ss -ta | grep ESTABLISHED | wc -1)
 
-#USERS:
+#Users:
 usrs=$(users | wc -w)
 
-#NETWORK:
+#Network:
 ip=$(hostname -I)
 mac=$(ip a | grep ether | awk '{print $2}')
 
-#CMDS:
+#Commands:
 cmds=$(journalctl_COMM=sudo | grep COMMAND | wc -l)
 https
 
