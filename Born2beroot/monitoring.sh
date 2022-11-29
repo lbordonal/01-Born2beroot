@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:09:08 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/25 17:30:23 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/29 11:36:17 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ lvm=$(lsblk | grep "lvm" | wc -l)
 lvmu=$(if [ $lvm -eq 0 ]; then echo no; else echo yes; fi)
 
 #Active Connections:
-tcp=$(ss -ta | grep ESTABLISHED | wc -1)
+tcp=$(netstat -tunlp | grep tcp | wc -l)
 
 #Users:
 usrs=$(users | wc -w)
@@ -49,7 +49,6 @@ mac=$(ip a | grep ether | awk '{print $2}')
 
 #Commands:
 cmds=$(journalctl_COMM=sudo | grep COMMAND | wc -l)
-https
 
 #Display output:
 wall "
@@ -61,7 +60,7 @@ wall "
 #CPU load: $cpu_usage
 #Last boot: $last_boot
 #LVM use: $lvmu
-#Connections TCP: $tcp
+#Connections TCP: $tcp ESTABLISHED
 #User log: $usrs
 #Network: IP $ip ($mac)
 #Sudo: $cmds
