@@ -19,3 +19,11 @@ This repository contains code developed at 42 Porto for Born2beroot Project, fro
 </h2>
 <a href="https://github.com/lbordonal/01-Born2beroot/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
 <br /><br />
+
+
+<br />
+<br />
+<hr/>
+<p align="center">
+This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>. 
+</p>
