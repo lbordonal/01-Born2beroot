@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:09:08 by lbordona          #+#    #+#              #
-#    Updated: 2022/12/06 14:43:06 by lbordona         ###   ########.fr        #
+#    Updated: 2022/12/15 17:03:51 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ lvm=$(lsblk | grep "lvm" | wc -l)
 lvmu=$(if [ $lvm -eq 0 ]; then echo no; else echo yes; fi)
 
 #Active Connections:
-tcp=$(ss -neopt state established | wc -l)
+tcp=$(netstat -tunlp | grep tcp | wc -l)
 
 #Users:
 usrs=$(users | wc -w)
