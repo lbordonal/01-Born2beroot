@@ -20,6 +20,13 @@ This repository contains code developed at 42 Porto for Born2beroot Project, fro
 <a href="https://github.com/lbordonal/01-Born2beroot/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
 <br /><br />
 
+<h2 align="left">
+	 :bookmark_tabs: Wiki
+</h2>
+<a href="https://github.com/lbordonal/01-Born2beroot/wiki">Click here</a> for information regarding this project.
+<br /><br />
+
+
 
 <br />
 <br />
