@@ -11,7 +11,8 @@
 </p>
 
 <p align="center">
-This repository contains code developed at 42 Porto for Born2beroot Project, from 02/12/22 to ...
+This repository contains code developed at 42 Porto for Born2beroot Project, from 02/12/22 to 16/12/22. <br/><br/>
+<em>This project will be evaluated again in the next few days to correct the password policies [missed <code>lcredit=-1</code> in the previous evaluations].</em>
 </p>
 
 <h2 align="left">
