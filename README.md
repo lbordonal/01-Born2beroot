@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/score-not%20submitted-red" />
+	<img src="https://img.shields.io/badge/score-90%20%2F%20100-success" />
 	<img src="https://img.shields.io/github/languages/code-size/lbordonal/01-Born2beroot" />
 	<img src="https://img.shields.io/github/languages/count/lbordonal/01-Born2beroot" />
 	<img src="https://img.shields.io/github/languages/top/lbordonal/01-Born2beroot" />
@@ -33,5 +33,5 @@ This repository contains code developed at 42 Porto for Born2beroot Project, fro
 <br />
 <hr/>
 <p align="center">
-This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>. 
+This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>.
 </p>
