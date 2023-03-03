@@ -1,13 +1,13 @@
-<h1 align="center">
-	42-Cursus - Born2beroot
-</h1>
+<p align="center">
+  <img src="https://github.com/lbordonal/lbordonal/blob/main/.images/Born2beroot.png">
+</p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/score-90%20%2F%20100-success" />
-	<img src="https://img.shields.io/github/languages/code-size/lbordonal/01-Born2beroot" />
-	<img src="https://img.shields.io/github/languages/count/lbordonal/01-Born2beroot" />
-	<img src="https://img.shields.io/github/languages/top/lbordonal/01-Born2beroot" />
-	<img src="https://img.shields.io/github/last-commit/lbordonal/01-Born2beroot" />
+	<img src="https://img.shields.io/badge/score-90%20%2F%20100-success?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/code-size/lbordonal/01-Born2beroot?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/count/lbordonal/01-Born2beroot?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/top/lbordonal/01-Born2beroot?style=for-the-badge" />
+	<img src="https://img.shields.io/github/last-commit/lbordonal/01-Born2beroot?style=for-the-badge" />
 </p>
 
 <p align="center">
