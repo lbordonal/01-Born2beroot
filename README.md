@@ -15,7 +15,8 @@ This repository contains code developed at 42 Porto for Born2beroot Project, fro
 <em>This project will be evaluated again in the next few days to correct the password policies [missed <code>lcredit=-1</code> in the previous evaluations].</em>
 </p>
 
-<h2 align="left">
+<img src="https://github.com/lbordonal/lbordonal/blob/main/.42_badges/born2beroote.png" align="right" />
+<h2>
 	 :notebook: Subject
 </h2>
 <a href="https://github.com/lbordonal/01-Born2beroot/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
